@@ -1,0 +1,207 @@
+/* PC、スマホ共通スタイル */
+#top-visual > img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#top-visual > h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    font-family: "セザンヌ", "Source Sans Pro", "Hiragino Kaku Gothic ProN";  
+    color: #ffffff;
+}
+#logo-top {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 11;
+}
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    background-color: yellow;
+}
+body {
+    margin: 0 auto;
+    color: #666961;
+    font-family: "セザンヌ", "Source Sans Pro", "Hiragino Kaku Gothic ProN";  
+    text-align: center;
+    font-size: 18px;
+}
+#nav-pc {
+    display: none;
+}
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+}
+#nav-sp li {
+    list-style: none;
+}
+#nav-sp {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+    background-color: #ce933e;
+}
+#menu-sp {
+    float: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    z-index: 100;
+}
+#logo-sp {
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.menu {
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 44px;
+    font-size: 16px;
+    text-decoration: none;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+#nav-sp > a {
+    display: block;
+}
+#nav-sp a:link,
+#nav-sp a:visited,
+#nav-sp a:active {
+    color: #ffffff;
+}
+#nav-sp a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.cpic > img {
+    justify-content: center;
+    /* margin-right: -10px; */
+    height: 50px;
+    width: 250px;
+    object-fit: cover;
+}
+.types-cont {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+footer {
+    background-color: #8f7b72;
+}
+#left {
+    display: flex;
+}
+#logo-footer {
+    display: flex;
+    float: left;
+}
+#sns-icon {
+    display: flex;
+}
+#sns-icon img {
+    max-width: 30px;
+    margin: 10px;
+}
+footer li {
+    list-style: none;
+}
+
+/*パソコン*/
+@media screen and (min-width: 768px) {
+    #top-visual > h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 11;
+        font-family: "セザンヌ", "Source Sans Pro", "Hiragino Kaku Gothic ProN";  
+        color: #ffffff;
+    }
+    #nav-pc {
+        position: absolute;
+        top: 20px;
+        left: 1000px;
+        display: block;
+        font-size: 15px;
+        font-weight: bold;
+        z-index: 11;
+    }
+    #nav-pc > a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    #logo-top {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        z-index: 11;
+    }
+    #nav-sp,
+    #nav-sp ul,
+    #menu-sp {
+        display: none;
+    }
+    #nav-sp li {
+        list-style: none;
+    }
+    #nav-pc > a:hover {
+        color: orange;
+        text-decoration: underline;
+    }
+    .countries-pics {
+        display: flex;
+        justify-content: center;
+        /* width: 1000px; */
+        /* margin: 0 auto; */
+    }
+    .cpic > img {
+        justify-content: center;
+        /* margin-right: -10px; */
+        height: 108px;
+        width: 250px;
+        object-fit: cover;
+    }
+    .types-cont {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .types-each {
+        margin: 50px;
+    }
+    #sns-icon img {
+        max-width: 30px;
+        padding: 0 auto;
+    }
+    .parent {
+        display: flex;
+        justify-content: center;
+    }
+    .left,
+    .right {
+        width: 50%;
+    }
+}
